@@ -1,7 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Measure from 'react-measure'
-import { Transition, Trail, animated, interpolate, config } from 'react-spring'
+import {
+  Transition,
+  Trail,
+  animated,
+  interpolate,
+  config,
+} from 'react-spring/renderprops'
 
 const styles = {
   outer: { position: 'relative', width: '100%', height: '100%' },
@@ -186,7 +192,10 @@ export class Grid extends React.PureComponent {
                     update={this.update}
                     impl={impl}
                     config={config}
-                    children={(transitionMount || this.state.mounted) && displayData.map(this.cell)}
+                    children={
+                      (transitionMount || this.state.mounted) &&
+                      displayData.map(this.cell)
+                    }
                   />
                 </div>
               )}
