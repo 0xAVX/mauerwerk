@@ -78,8 +78,7 @@
     "react-dom": ">= 16.4.0"
   },
   "dependencies": {
-    "@babel/runtime": "^7.0.0",
-    "react-measure": "^2.1.2",
-    "react-spring": "^5.7.2"
+    "react-measure": "^2.3.0",
+    "react-spring": "^8.0.27"
   }
 }
